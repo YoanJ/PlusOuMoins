@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yoan.plusoumoins.SettingsActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextInit"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewInit"
+        android:layout_toEndOf="@+id/textViewInit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Init value"
+        android:id="@+id/textViewInit"
+        android:layout_alignBottom="@+id/editTextInit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increment value"
+        android:id="@+id/textViewIncrem"
+        android:layout_below="@+id/editTextInit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextIncrem"
+        android:layout_alignBottom="@+id/textViewIncrem"
+        android:layout_toRightOf="@+id/textViewIncrem"
+        android:layout_toEndOf="@+id/textViewIncrem" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max Value"
+        android:id="@+id/textViewMax"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textViewIncrem"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMax"
+        android:layout_alignBottom="@+id/textViewMax"
+        android:layout_toRightOf="@+id/editTextInit"
+        android:layout_toEndOf="@+id/editTextInit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Min Value"
+        android:id="@+id/textViewMin"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewMax"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextMin"
+        android:layout_alignBottom="@+id/textViewMin"
+        android:layout_toRightOf="@+id/editTextInit"
+        android:layout_toEndOf="@+id/editTextInit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/buttonOK"
+        android:layout_below="@+id/textViewMin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp" />
+</RelativeLayout>
